@@ -4,21 +4,26 @@ author: "Sandeep Jabez"
 format: pdf
 editor: visual
 ---
+
+
+
 # MT Cars Dataset Analysis
 
-
 ## Introduction
+
 The dataset used in this analysis is the `mtcars` dataset from the `datasets` package in R. The dataset comprises 32 observations on 11 variables. The head of the dataset is shown below.
+
 ```{r label=mtcars, echo=FALSE}
 head(mtcars)
 
 ```
 
-
 *When echo=FALSE, the code is not shown in the rendered document.*
 
 ## Analysis
+
 ### Plot 1 (Scatter Plot of Weight vs. MPG)
+
 To visualize and understand the relationship between the weight of the car and the miles per gallon (mpg) of the car, a scatter plot was created. The plot below shows the relationship between the two variables.
 
 ```{r label=plot1, echo=FALSE}
@@ -32,9 +37,11 @@ ggplot(mtcars, aes(x = wt, y = mpg)) +
        y = "Miles per Gallon")
 
 ```
+
 We can observe from the plot that there is a negative relationship between the weight of the car and the miles per gallon (mpg) of the car. As the weight of the car increases, the miles per gallon decreases.
 
 ### Plot 2 (Scatter Plot of Weight vs. MPG with Regression Line)
+
 Let's try adding a regression line to the plot to see if the relationship between the weight of the car and the miles per gallon (mpg) of the car is linear.
 
 ```{r label=plot2, echo=FALSE}
@@ -48,9 +55,11 @@ ggplot(mtcars, aes(x = wt, y = mpg)) +
 
 
 ```
+
 We can see from the plot that the regression line indicates a negative linear relationship between the weight of the car and the miles per gallon (mpg) of the car. As the weight of the car increases, the miles per gallon decreases.
 
 ### Numerical Summary (Weight and MPG)
+
 Let's take look at the **numerical summary** of the variables used in the plot:
 
 ```{r label=summary, echo=FALSE}
@@ -65,6 +74,5 @@ summary(mtcars$mpg)
 ```
 
 ## Conclusion
+
 The analysis of the `mtcars` dataset shows a negative relationship between the weight of the car and the miles per gallon (mpg) of the car. As the weight of the car increases, the miles per gallon decreases. The scatter plot and regression line confirm this relationship. The numerical summary of the variables used in the plot provides additional insights into the distribution of the data.
-
-
